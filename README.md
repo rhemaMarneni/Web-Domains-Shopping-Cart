@@ -1,5 +1,7 @@
 # Shopping Cart for Web Domains
 
+[Visit Project](https://web-domains-shopping-cart.vercel.app/)
+
 Frontend shopping cart component to buy web domains.
 
 This project uses React, Next.js, TypeScript, and [Chakra UI](https://chakra-ui.com/) (a popular React component library).
@@ -18,7 +20,7 @@ The following outline the core features:
 - If the user's cart contains exactly `numDomainsRequired` domains, the "purchase" button is activated. Clicking purchase button is a no-op.
 - A button to remove all unavailable domains from the cart.
 - A button to copy the domains in the cart to the clipboard, separated by commas. For instance `[abc.com, def.com, ghi.com]` could be copied as `abc.com, def.com, ghi.com`.
-- A button to keep only the `N` "best" domains, where `N` is `numDomainsRequired`. To prioritize domains, sort them by their domain ending first: `.com` is better than `.app` which is better than `.xyz`. If there are ties, shorter domains win. For instance, one correct ordering is `[abc.com, abcd.com, ab.app, abc.app, a.xyz]`.
+- A button to keep only the `N` "best" domains, where `N` is `numDomainsRequired`. To prioritize domains, I sort them by their domain ending first: `.com` is better than `.app` which is better than `.xyz`. If there are ties, shorter domains win. For instance, one correct ordering is `[abc.com, abcd.com, ab.app, abc.app, a.xyz]`. If there are still ties, the last tiebreaker and lexicographical ordering.
 - Usability features like helpful error messages, loading states, confirmation messages, help text, etc.
 
 ## Validation
@@ -49,7 +51,7 @@ Chakra UI offers a variety of useful features
 
 ## Getting started
 
-To start the challenge, install the required packages:
+Before running the project, install the required packages:
 
 ```sh
 npm install
@@ -57,7 +59,7 @@ npm install
 
 Be sure you're using Node version 18 or greater.
 
-## Testing
+## Running your code
 
 To run your code, do:
 
@@ -75,9 +77,9 @@ To check your code's validity, you can run:
 
 ## Deployment
 
-This project is deployed on Vercel. [Link]
+This project is deployed on Vercel. [Link](https://web-domains-shopping-cart.vercel.app/)
 
 ## Future Work
 
 - Being able to edit existing domains
-- A progress bar to show how "ready" or "full" the cart is for purchase
+- A progress bar (or any visual component) to show how "ready" or "full" the cart is for purchase
